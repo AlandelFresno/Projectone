@@ -1,4 +1,23 @@
-.header_main{
+.header{
+    background-color: black;
+    color: white;
     display: flex;
-    float: left;
+    padding-left: 5px;
+    padding-top: 1px;
+}
+.header_img{
+    width: 70px;
+    height: 70px;
+}
+.header p {
+    margin: 5px;
+    padding-top: 20px;
+}
+.header_button{
+    border: 1px solid red;
+    padding: 1px;
+    position: absolute;
+    right: 24px;
+    top: 30px;
+    width: 75px;
 }
