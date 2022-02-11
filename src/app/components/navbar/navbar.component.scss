@@ -9,13 +9,19 @@
     width: 70px;
     height: 70px;
 }
-.navbar p {
-    margin: 5px;
-    padding-top: 20px;
-}
-.navbar p:hover {
+.navbar_img:hover {
     cursor: pointer;
 }
+.nav {
+    margin: 5px;
+    padding-top: 20px;
+    text-decoration: none;
+    color: white;
+}
+.nav:hover {
+    cursor: pointer;
+}
+
 .navbar_button{
     appearance: none;
     background-color: transparent;
