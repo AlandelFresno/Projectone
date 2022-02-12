@@ -5,24 +5,30 @@
     padding-left: 5px;
     padding-top: 1px;
 }
-.navbar_img{
+.nav_img{
     width: 70px;
     height: 70px;
 }
-.navbar_img:hover {
+.nav_img:hover {
     cursor: pointer;
 }
-.nav {
+.nav_link {
     margin: 5px;
     padding-top: 20px;
     text-decoration: none;
     color: white;
 }
-.nav:hover {
+.nav_link:hover {
     cursor: pointer;
+    background-color: #1A1A1A;
 }
-
-.navbar_button{
+.nav_searchbar{
+    background-color: #1A1A1A;
+    align-items: center;
+    max-width: 15%;
+    height: 1.5rem;
+}
+.nav_button{
     appearance: none;
     background-color: transparent;
     border: 2px solid white;
@@ -40,7 +46,7 @@
     top: 25px;
     width: 75px;
 }
-.navbar_button:hover {
+.nav_button:hover {
     color: #fff;
     background-color: #1A1A1A;
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
