@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NotfoundComponent } from './pages/notfound/notfound.component';
     HomeComponent,
     NavbarComponent,
     WelcomeComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
