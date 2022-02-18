@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import data from  '../../data/data.json';
 
 
@@ -8,26 +8,30 @@ import data from  '../../data/data.json';
   styleUrls: ['./albumlist.component.scss']
 })
 
-export class AlbumlistComponent{
+export class AlbumlistComponent implements OnInit{
 
   albums: [];
   
   test1: any[];
+  innerWidth: any;
 
   constructor() { 
 
     this.albums = data;
     let result = this.albums.map(({img}) => img);
-    
     this.test1 = result;
-    
-
-
-
-    
     console.log(this.albums);
     console.log(this.test1);
     console.log(result);
   };
-
+  
+  ngOnInit(): void {
+    this.innerWidth = window.innerWidth;
+  };
+  
+  @HostListener('window:resize', ['$event'])
+  onResize(){
+    this.innerWidth = window.innerWidth
+    console.log(this.innerWidth);
+  };
 };

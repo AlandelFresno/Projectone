@@ -1,7 +1,67 @@
-<div class="bg-black text-white flex">
-    <div class="" *ngFor="let img of test1">
-        <div class="flex-row border-white border-2 ml-4 mt-12 rounded">
-            <img class="img_display" src="../../../assets/img/{{ img }}.jpg"/>
+<div class="bg-black text-white">
+    <p class="text-white">{{innerWidth}}</p>
+    <div class="flex" *ngIf="innerWidth === 1920 ">
+        <div class="" *ngFor="let img of test1 | slice:0:10; let i=index">
+            <div class="flex-row border-white border-2 ml-4 mt-12 rounded">
+                <img class="img_display" src="../../../assets/img/{{ img }}.jpg"/>
+            </div>
+        </div>
+    </div>
+    <div class="flex" *ngIf="innerWidth < 1920 && innerWidth >= 1512">
+        
+        <div class="" *ngFor="let img of test1 | slice:0:8; let i=index">
+            <div class="flex-row border-white border-2 ml-4 mt-12 rounded">
+                <img class="img_display" src="../../../assets/img/{{ img }}.jpg"/>
+            </div>
+        </div>
+    </div>
+    <div class="flex" *ngIf="innerWidth < 1512 && innerWidth >= 1323" >
+        <div class="" *ngFor="let img of test1 | slice:0:7; let i=index">
+            <div class="flex-row border-white border-2 ml-4 mt-12 rounded">
+                <img class="img_display" src="../../../assets/img/{{ img }}.jpg"/>
+            </div>
+        </div>
+    </div>
+    <div class="flex" *ngIf="innerWidth < 1323 && innerWidth >= 1138" >
+        <div class="" *ngFor="let img of test1 | slice:0:6; let i=index">
+            <div class="flex-row border-white border-2 ml-4 mt-12 rounded">
+                <img class="img_display" src="../../../assets/img/{{ img }}.jpg"/>
+            </div>
+        </div>
+    </div>
+    <div class="flex" *ngIf="innerWidth < 1138 && innerWidth >= 952" >
+        <div class="" *ngFor="let img of test1 | slice:0:5; let i=index">
+            <div class="flex-row border-white border-2 ml-4 mt-12 rounded">
+                <img class="img_display" src="../../../assets/img/{{ img }}.jpg"/>
+            </div>
+        </div>
+    </div>
+    <div class="flex" *ngIf="innerWidth < 952 && innerWidth >= 764" >
+        <div class="" *ngFor="let img of test1 | slice:0:4; let i=index">
+            <div class="flex-row border-white border-2 ml-4 mt-12 rounded">
+                <img class="img_display" src="../../../assets/img/{{ img }}.jpg"/>
+            </div>
+        </div>
+    </div>
+    <div class="flex" *ngIf="innerWidth < 764 && innerWidth >= 579" >
+        <div class="" *ngFor="let img of test1 | slice:0:3; let i=index">
+            <div class="flex-row border-white border-2 ml-4 mt-12 rounded">
+                <img class="img_display" src="../../../assets/img/{{ img }}.jpg"/>
+            </div>
+        </div>
+    </div>
+    <div class="flex" *ngIf="innerWidth < 579 && innerWidth >= 391" >
+        <div class="" *ngFor="let img of test1 | slice:0:2; let i=index">
+            <div class="flex-row border-white border-2 ml-4 mt-12 rounded">
+                <img class="img_display" src="../../../assets/img/{{ img }}.jpg"/>
+            </div>
+        </div>
+    </div>
+    <div class="flex" *ngIf="innerWidth < 391" >
+        <div class="" *ngFor="let img of test1 | slice:0:1; let i=index">
+            <div class="flex-row border-white border-2 ml-4 mt-12 rounded">
+                <img class="img_display" src="../../../assets/img/{{ img }}.jpg"/>
+            </div>
         </div>
     </div>
 </div>
