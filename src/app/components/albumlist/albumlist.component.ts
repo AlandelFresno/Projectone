@@ -11,18 +11,19 @@ import data from  '../../data/data.json';
 export class AlbumlistComponent implements OnInit{
 
   albums: [];
-  
-  test1: any[];
+  img: any[];
+  title: any[];
+  author: any[];
   innerWidth: any;
 
   constructor() { 
-
     this.albums = data;
     let result = this.albums.map(({img}) => img);
-    this.test1 = result;
-    console.log(this.albums);
-    console.log(this.test1);
-    console.log(result);
+    this.img = result;
+    let titles = this.albums.map ( ({name}) => name );
+    this.title = titles;
+    let authors = this.albums.map ( ({author}) => author );
+    this.author = authors;
   };
   
   ngOnInit(): void {

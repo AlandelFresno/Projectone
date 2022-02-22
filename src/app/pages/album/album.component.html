@@ -1,0 +1,17 @@
+<div class="bg-gray-900 h-screen text-white">
+    <div class="flex flex-wrap">
+        <div class="bg-gray-900" *ngFor="let img of img | slice:0:20; let i=index">
+            <div class="border-white border-2 ml-4 mt-12 rounded">
+                <img class="img_display" src="../../../assets/img/{{ img }}.jpg"/>
+            </div>
+            <div class="flex justify-center">
+                <div class="flex-blox">
+                    <p class="text-lg text-purple-400"> {{title[i]}} </p>
+                    <p class="text-sm"> {{author[i]}}</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <button routerLink="1" class="flex justify-center border-white border rounded text-white mt-3 mx-4 w-11/12"> View more </button>
+</div>

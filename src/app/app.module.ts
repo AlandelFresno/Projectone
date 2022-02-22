@@ -9,6 +9,7 @@ import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { LoginComponent } from './pages/login/login.component';
 import { AlbumlistComponent } from './components/albumlist/albumlist.component';
+import { AlbumComponent } from './pages/album/album.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AlbumlistComponent } from './components/albumlist/albumlist.component';
     WelcomeComponent,
     NotfoundComponent,
     LoginComponent,
-    AlbumlistComponent
+    AlbumlistComponent,
+    AlbumComponent
   ],
   imports: [
     BrowserModule,
