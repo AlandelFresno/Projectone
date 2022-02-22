@@ -10,3 +10,5 @@
  albumlist.html code can be shortened but I don't know how.
  
  album page ngFor rendering outside the body
+ 
+ I used issues in the title of all commits and realized too late that is not the correct way of make commits
