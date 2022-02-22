@@ -8,4 +8,5 @@
 ###### issues
 
  albumlist.html code can be shortened but I don't know how.
+ 
  album page ngFor rendering outside the body
